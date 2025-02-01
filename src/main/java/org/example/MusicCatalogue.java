@@ -79,9 +79,9 @@ public class MusicCatalogue {
     public JLabel northText(){
         label = new JLabel("My Music Catalogue",JLabel.CENTER);
         label.setVerticalAlignment(JLabel.TOP);
-        label.setFont(new Font("Verdana", Font.BOLD, 22));
+        label.setFont(new Font("Verdana", Font.BOLD, 26));
         label.setPreferredSize(new Dimension(300, 200));
-        label.setForeground(new Color(120, 90, 40));
+        label.setForeground(new Color(120, 90, 50));
         label.setBackground(new Color(100, 20, 70));
         label.setBorder(BorderFactory.createEmptyBorder(40,0,0,0));
 
@@ -101,6 +101,7 @@ public class MusicCatalogue {
         ExitButton.setBackground(new Color(255, 127, 127));
         ExitButton.setForeground(Color.white);
         ExitButton.setFocusPainted(false);
+        ExitButton.setPreferredSize(new Dimension(100,50));
         ExitButton.addActionListener(e->{
         catalogue.dispose();
 
@@ -114,6 +115,7 @@ public class MusicCatalogue {
         submitButton.setBackground(new Color(60,179,113));
         submitButton.setForeground(Color.white);
         submitButton.setFocusPainted(false);
+        submitButton.setPreferredSize(new Dimension(100,50));
         submitButton.addActionListener(e -> {
 
             if(!field.getText().isBlank()&&!field2.getText().isBlank()){
