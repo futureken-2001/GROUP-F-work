@@ -3,9 +3,11 @@ import org.example.MusicCatalogue;
 import javax.swing.*;
 import java.awt.*;
 
-public class MusicCatalogueTest {
+public class MusicCatalogueTest 
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         MusicCatalogue musicCatalogue = new MusicCatalogue();
 
         testNorthText(musicCatalogue);
@@ -18,7 +20,8 @@ public class MusicCatalogueTest {
     }
 
     // Unit Tests
-    public static void testNorthText(MusicCatalogue musicCatalogue) {
+    public static void testNorthText(MusicCatalogue musicCatalogue)
+    {
         JLabel label = musicCatalogue.northText();
         System.out.println("Testing northText():");
         System.out.println("Label Text: " + label.getText() + " (Expected: My Music Catalogue)");
@@ -27,7 +30,8 @@ public class MusicCatalogueTest {
         System.out.println();
     }
 
-    public static void testWestlist(MusicCatalogue musicCatalogue) {
+    public static void testWestlist(MusicCatalogue musicCatalogue)
+    {
         JList<String> list = musicCatalogue.westlist();
         System.out.println("Testing westlist():");
         System.out.println("List Size: " + list.getModel().getSize() + " (Expected: 3)");
@@ -37,7 +41,8 @@ public class MusicCatalogueTest {
         System.out.println();
     }
 
-    public static void testSubmitButtonFunc(MusicCatalogue musicCatalogue) {
+    public static void testSubmitButtonFunc(MusicCatalogue musicCatalogue)
+    {
         JButton submitButton = musicCatalogue.submitButtonFunc();
         System.out.println("Testing submitButtonFunc():");
         System.out.println("Button Text: " + submitButton.getText() + " (Expected: SUBMIT)");
@@ -46,7 +51,8 @@ public class MusicCatalogueTest {
         System.out.println();
     }
 
-    public static void testCombo(MusicCatalogue musicCatalogue) {
+    public static void testCombo(MusicCatalogue musicCatalogue)
+    {
         JComboBox<String> comboBox = musicCatalogue.combo();
         System.out.println("Testing combo():");
         System.out.println("ComboBox Size: " + comboBox.getItemCount() + " (Expected: 3)");
@@ -57,7 +63,8 @@ public class MusicCatalogueTest {
     }
 
     // Integration Tests
-    public static void testCatalogueWindow(MusicCatalogue musicCatalogue) {
+    public static void testCatalogueWindow(MusicCatalogue musicCatalogue) 
+    {
         JFrame frame = musicCatalogue.catalogueWindow();
         System.out.println("Testing catalogueWindow():");
         System.out.println("Frame Title: " + frame.getTitle() + " (Expected: Catalogue)");
@@ -66,7 +73,8 @@ public class MusicCatalogueTest {
         System.out.println();
     }
 
-    public static void testSubmitButtonAction(MusicCatalogue musicCatalogue) {
+    public static void testSubmitButtonAction(MusicCatalogue musicCatalogue)
+    {
         JButton submitButton = musicCatalogue.submitButtonFunc();
         JTextField field = musicCatalogue.field();
         JTextField field2 = musicCatalogue.field2();
@@ -84,6 +92,7 @@ public class MusicCatalogueTest {
 
     }
 }
+
 
 
 
