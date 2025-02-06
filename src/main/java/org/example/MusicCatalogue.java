@@ -3,7 +3,8 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class MusicCatalogue {
+public class MusicCatalogue
+    {
     JFrame catalogue;
     JPanel northPanel,southPanel,westPanel,centerPanel;
     JLabel label;
@@ -76,7 +77,8 @@ public class MusicCatalogue {
         return centerPanel;
     }
 
-    public JLabel northText(){
+    public JLabel northText()
+        {
         label = new JLabel("My Music Catalogue",JLabel.CENTER);
         label.setVerticalAlignment(JLabel.TOP);
         label.setFont(new Font("Verdana", Font.BOLD, 26));
@@ -88,7 +90,8 @@ public class MusicCatalogue {
         return label;
     }
 
-    public JList westlist(){
+    public JList westlist()
+        {
         String categ[]={"Rap","Raggae","Ballads"};
         categories=new JList<>(categ);
         categories.setPreferredSize(new Dimension(150,600));
@@ -96,7 +99,8 @@ public class MusicCatalogue {
         return categories;
     }
 
-    public JButton ExitButtonFunc(){
+    public JButton ExitButtonFunc()
+        {
         ExitButton=new JButton("EXIT");
         ExitButton.setBackground(new Color(255, 127, 127));
         ExitButton.setForeground(Color.white);
@@ -136,13 +140,15 @@ public class MusicCatalogue {
 
         return label1;
     }
-    public JLabel studio(){
+    public JLabel studio()
+        {
         JLabel label1 =new JLabel("RECORDING STUDIO");
         label1.setFont(new Font("Verdana", Font.BOLD, 14));
         label1.setBorder(BorderFactory.createEmptyBorder(0,10,0,0));
 
         return label1;
-    }public JLabel genre(){
+    }public JLabel genre()
+        {
         JLabel label1 =new JLabel("CATEGORY");
         label1.setFont(new Font("Verdana", Font.BOLD, 14));
         label1.setBorder(BorderFactory.createEmptyBorder(0,10,0,0));
@@ -150,7 +156,8 @@ public class MusicCatalogue {
         return label1;
     }
 
-    public JLabel available(){
+    public JLabel available()
+        {
         JLabel label1 =new JLabel("AVAILABLE");
         label1.setFont(new Font("Verdana", Font.BOLD, 14));
         label1.setBorder(BorderFactory.createEmptyBorder(0,10,0,0));
@@ -159,7 +166,8 @@ public class MusicCatalogue {
     }
 
 
-    public JTextField field(){
+    public JTextField field()
+        {
         field=new JTextField();
         text = field.getText();
         field.setColumns(80);
